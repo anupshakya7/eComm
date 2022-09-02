@@ -22,6 +22,31 @@
     .custom-login {
         height: 100%;
     }
+
+    .custom-product {
+        height: 100%;
+    }
+
+    img.slider-img {
+        height: 750px !important;
+    }
+
+    .slider-text {
+        background: #162d1687;
+    }
+
+    .trending-image {
+        height: 100px;
+    }
+
+    .trending-wrapper {
+        margin: 40px;
+    }
+
+    .trending-item {
+        float: left;
+        width: 16%;
+    }
 </style>
 
 </html>

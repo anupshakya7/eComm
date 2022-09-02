@@ -16,18 +16,25 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->insert([
             [
-                "name" => "Samsung mobile",
-                "price" => "300",
-                "description" => "A smartphone with 8gb ram and much more features",
-                "category" => "mobile",
-                "gallery" => "https://636571.smushcdn.com/2636162/wp-content/uploads/2022/01/samsung-galaxy-m02s-price-in-nepal-6546546540001-770x578.jpg?lossy=1&strip=1&webp=1",
+                "name" => "Panasonic TV",
+                "price" => "500",
+                "description" => "A smart tv with much more features",
+                "category" => "tv",
+                "gallery" => "https://static-01.daraz.com.np/p/d8f9add8364a53aebb25de1304ea1a17.jpg",
             ],
             [
-                "name" => "Nokia mobile",
-                "price" => "400",
-                "description" => "A smartphone with 6gb ram and much more features",
-                "category" => "mobile",
-                "gallery" => "https://www.androidauthority.com/wp-content/uploads/2020/09/nokia-8.3-3.4-2.4-together-backsides-2-840x472.jpg.webp",
+                "name" => "Sony TV",
+                "price" => "700",
+                "description" => "A tv with much more features",
+                "category" => "tv",
+                "gallery" => "https://www.tradeinn.com/f/13819/138192974/sony-kd43x81j-43-4k-led-tv.jpg",
+            ],
+            [
+                "name" => "LG Fridge",
+                "price" => "200",
+                "description" => "A fridge with much more features",
+                "category" => "fridge",
+                "gallery" => "https://www.lg.com/np/images/plp-b2c/refrigerators/feature/M04_lk-refrigerators-herop-2-m.jpg",
             ],
         ]);
     }
