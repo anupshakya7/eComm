@@ -27,6 +27,11 @@
         height: 100%;
     }
 
+    .custom-detail {
+        height: 100%;
+        margin: 40px;
+    }
+
     img.slider-img {
         height: 750px !important;
     }
@@ -46,6 +51,14 @@
     .trending-item {
         float: left;
         width: 16%;
+    }
+
+    .detail-img {
+        height: 500px;
+        width: 80%;
+
+        border-radius: 5px;
+        border: 5px;
     }
 </style>
 
