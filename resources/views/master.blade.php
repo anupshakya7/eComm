@@ -60,6 +60,12 @@
         border-radius: 5px;
         border: 5px;
     }
+
+    .cart-list-divider{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        margin-botton:20px;
+        padding-bottom:20px; 
+    }
 </style>
 
 </html>
