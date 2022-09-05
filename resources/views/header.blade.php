@@ -19,7 +19,7 @@ if(Session::has('user')){
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Orders</a>
+                    <a class="nav-link" href="/myorders">Orders</a>
                 </li>
                 <form class="d-flex" role="search">
                     <input class="form-control" style="margin-left:150px;margin-right:20px;width: 700px" type="search"
@@ -45,6 +45,9 @@ if(Session::has('user')){
                 @else
                 <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
                 </li>
 
                 @endif

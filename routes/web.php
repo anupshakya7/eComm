@@ -19,8 +19,9 @@ use Illuminate\Support\Facades\Session;
 Route::get('/login', function () {
     return view('login');
 });
-
+Route::view('/register', 'register');
 Route::post('/login', [UserController::class, "login"]);
+Route::post('/register', [UserController::class, "register"]);
 Route::get('/', [ProductController::class, "index"]);
 Route::get('/detail/{id}', [ProductController::class, "detail"]);
 Route::post('/add_to_cart', [ProductController::class, "addToCart"]);
@@ -29,5 +30,7 @@ Route::get('/logout', function () {
     return redirect('/login');
 });
 Route::get('/cartList', [ProductController::class, "cartList"]);
-Route::get('/removecart/{id}',[ProductController::class,"removeCart"]);
-Route::get('/ordernow',[ProductController::class,'orderNow']);
+Route::get('/removecart/{id}', [ProductController::class, "removeCart"]);
+Route::get('/ordernow', [ProductController::class, 'orderNow']);
+Route::post('/orderplace', [ProductController::class, 'orderPlace']);
+Route::get('/myorders', [ProductController::class, 'myOrders']);

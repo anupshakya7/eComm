@@ -16,11 +16,13 @@ class UserAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->path() == "login" && $request->session()->has('user')) {
+        if ($request->path() == "login" && $request->session()->has('user') || ($request->path() == "register" && $request->session()->has('user'))) {
             return redirect('/');
-        } else if ($request->path() != "login" && !$request->session()->has('user')) {
-            return redirect('/login');
         }
+        // } else if ($request->path() != "login" && !$request->session()->has('user')) {
+        //     return redirect('/login');
+
+        // }
         return $next($request);
     }
 }
